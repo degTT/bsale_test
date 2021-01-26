@@ -1,7 +1,9 @@
 function getProduct(){
   document.getElementById('customDiv').innerHTML = ''
   let search = document.getElementById('search').value
-  fetch('http://localhost:8080/bsale_fin/API/productos.php?search='+search)
+  fetch('http://localhost:8080/bsale_fin/API/productos.php?search='+search,{
+    mode: 'cors'
+  })
   .then( response => response.json())
   .then(data => {
     if(data.length !== 0){
