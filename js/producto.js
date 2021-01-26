@@ -1,7 +1,7 @@
 function getProduct(){
   document.getElementById('customDiv').innerHTML = ''
   let search = document.getElementById('search').value
-  fetch('https://dbbsaletest.herokuapp.com/bsale_fin/API/productos.php?search='+search,{
+  fetch('https://dbbsaletest.herokuapp.com/Api/productos.php?search='+search,{
     mode: 'cors',
     'headers': {
       'Access-Control-Allow-Origin': '*',
