@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 include('./inc/connection.php');
 $search = $_GET['search'];
 if($mbd){
